@@ -1,1 +1,1 @@
-# site
+This is an experimental version of my personal website. Curently under development.
