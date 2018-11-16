@@ -25,18 +25,18 @@ weight = 7
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = ""
   
 [[feature]]
-  icon = "chart-line"
+  icon = "globe-americas"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "GIS"
+  description = ""  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "fist-raised"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Community Organizing"
+  description = ""
 
 +++

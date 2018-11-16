@@ -10,31 +10,34 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Housing & Community Development Policy",
+    "Gentrification/Neighborhood Change",
+    "GIS",
+    "R"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "PhD in Public Affairs"
+  institution = "University of Minnesota"
+  year = "2019 (Expected)"
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "Master of Urban & Regional Planning"
+  institution = "University of Minnesota"
+  year = 2014
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
- 
+  course = "BA in Political Science"
+  institution = "Marquette University"
+  year = 2010
+
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Tony is PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. He received a master's degree in Urban and Regional Planning at the Humphrey School and his undergraduate degree in Political Science at Marquette University in Milwaukee, WI.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+He works as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting his PhD degree, he worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and nonprofits.
+
+His research interests include housing policy, urban political economy, race and inequality. He also has a passion for R, open data, and maps. 

@@ -1,0 +1,14 @@
+---
+title: Testing
+author: Tony Damiano
+date: '2018-11-14'
+slug: testing
+categories:
+  - hello world
+tags:
+  - hello
+image:
+  caption: ''
+  focal_point: ''
+---
+# This is a test of a new post

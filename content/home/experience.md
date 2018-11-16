@@ -19,27 +19,36 @@ date_format = "January 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
+  title = "Graduate Research Assistant"
+  company = "Center for Urban & Regional Affairs (CURA) | University of Minnesota"
+  company_url = "cura.umn.edu"
+  location = "Minneapolis, MN"
+  date_start = "2015-09-01"
+  # date_end = ""
   description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
+Assisting Professor Edward Goetz at the Center for Urban & Regional Affairs (CURA)
+
+Activities include:
+* Data analysis and visualization
+* Statistical modeling
+* Academic writing
+
+
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Research Associate"
+  company = "University of Minnesota"
+  company_url = "cura.umn.edu"
+  location = "Minneapolis, MN"
+  date_start = "2014-09-01"
+  date_end = "2015-09-01"
+  description = """
+Split time under Community GIS Coordinator Jeff Matson and Professor Edward Goetz
+
+Activities included:
+* Academic research assistance
+* GIS and community data visualization
+  """
 
 +++
