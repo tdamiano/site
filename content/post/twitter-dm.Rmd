@@ -15,58 +15,85 @@ image:
 ---
 
 ```{r setup, include = F, echo = F}
-library(rtweet)     # Access twitter data
-library(tidyverse)  # Suite of tools for data analysis using "tidy" framework
-library(tidytext)   # Tools for text analysis
+
+# Load pacman package manager
+if (!require(pacman)) install.packages('pacman')
+library(pacman)
+
+p_load(tidyverse,  # Suite of tools for data analysis using "tidy" framework
+       rtweet,     # Access twitter data
+       tidytext,   # Tools for text analysis
+       maps        # Map data
+       )
+
 
 create_token(consumer_key = "Wff9aeKVG2rDvQsu1qoJi9o64",
 consumer_secret = "hZc1H6uSccvtfCvaEyk17GIKGp0LkwvSL3NiyqYV5dcPMmIdIT",
 access_token  = "713068208849166336-vA8aMO43xbwg2vjCXFmwVBeB5dO2tv2",
 access_secret = "gJOnWlhfZIyn23a8v4Kbckg3IbZAjG8BdYfbp87eBqMwn")
 
-q <- "@eScarry"
-
-if(!file.exists("/Users/Tony/site/static/data/scarry_menchies.rds")) {
-  scarry_menchies <- search_tweets(q, n = 30000,
-                              retryonratelimit = T,
-                              include_rts = F,
-                              since  = "2018-11-15",
-                              until  = "2018-11-16")
-  write_rds(scarry_menchies, "/Users/Tony/site/static/data/scarry_menchies.rds")
-} else {
-  scarry_menchies <- read_rds("/Users/Tony/site/static/data/scarry_menchies.rds")
-}
+scarry_menchies <- read_rds("scarry_menchies.rds")
 
 #the tweet #1063183409458102272
 ```
 
 ## I just wanted to learn data science
 
-Thursday Nov 15, 2018 *Washington Examiner* reporter Eddie Scarry broke the internet worse than Kim Kardashian ever could. In a tweet for the ages, the conservative skeezeball best known for [taking unsuspecting foot pics of random women at restaurants](https://splinternews.com/troll-posts-creepshot-somehow-proving-alexandria-ocasio-1830476245), against all better advice and decency decided to dress down newly elected socialist congresswoman from New York Alexandria Ocasio-Cortez.
+Thursday, Nov 15, 2018, *Washington Examiner* reporter Eddie Scarry broke the internet worse than Kim Kardashian ever could. In a tweet for the ages, the conservative skeezeball best known for [taking unsuspecting foot pics of random women at restaurants](https://splinternews.com/troll-posts-creepshot-somehow-proving-alexandria-ocasio-1830476245), against all better advice and decency decided to dress down newly elected socialist congresswoman from New York Alexandria Ocasio-Cortez.
 
-![bad=tweet](/post/twitter-dm_files/bad-tweet.jpg)
+![](/img/twitter-dm/bad-tweet.png)
 
-I had been wanting to learn how to gather twitter data for quite sometime and instead of practicing on something useful, I decided to examime the beauty of Mr. Scarry's ratio for the ages. 
+### "This is our balloon boy"
+
+I'll take you inside our dm for the play by play. The reaction to Eddie's bad tweet started slowly at first, but snowballed as the afternoon progressed.
+
+ <i></i>                   |        <i></i>          
+:-------------------------:|:-------------------------:
+![](/img/twitter-dm/dm1.png)          |  ![](/img/twitter-dm/dm2.png)
+
+After a while, the replies kept coming and it wasn't clear Mr. Scarry would make it through the night.
+
+ <i></i>                   |        <i></i>          
+:-------------------------:|:-------------------------:
+![](/img/twitter-dm/dm3.png)          |  ![](/img/twitter-dm/dm5.png)
+
+By the time the things got rolling, there were over 10,000 replies before he deleted the tweet. Despite calling it a day, he decided to tweet through it. Each of his responses spawned its own mini-ratio in a cascading series of ratios that filled the internet (or at least my dm) with unadulterated glee.
+
+![](/img/twitter-dm/dm4.png)
+
+
+I had been wanting to learn how to scrape Twitter data for sometime and instead of practicing on something useful, I decided to examine the beauty of Mr. Scarry's ratio for the ages. 
+
+The following contains the analysis I performed using a sample of Mr. Scarry's mentions that day interspersed with R code so hopefully my wasted time can provide some social benefit to the several nerds who may eventually read this.
 
 ## Getting started
 
 ### Setting up a twitter app
 
-Since you're reading a post called data mining for the "very online" I'm going to assume you have a twitter account and are somewhat familiar with this hell site. You will however, need to create an app and generate tokens which will allow you to access Twitter data from their API.
+Since you're reading a post called data mining for the "very online", I'm going to assume you have a twitter account and are somewhat familiar with this hell site. You will however, need to create an app and generate tokens which will allow you to access Twitter data from their API.
 
 For this analysis I used the [**rtweet**](https://rtweet.info/index.html) package created by Professor Michael W. Kearney at the University of Missouri. Professor Kearney has a great guide to get you started. 
 
 [Set up a Twitter App](https://rtweet.info/articles/auth.html)
 
-SIDENOTE: If you are new to R, I would highly reccomend [*R for Data Science*](https://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham.
+SIDENOTE: If you are new to R, I would highly recommend [*R for Data Science*](https://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham.
 
-After I set up the app, I entered the tokens generated into **rtweet**. I also loaded a few other packages to help with data anlysis and cleaning.
+After I set up the app, I entered the tokens generated into **rtweet**. I also loaded a few other packages to help with data analysis and cleaning.
 
 
 ```{r, eval = FALSE, echo = TRUE}
-library(rtweet)     # Access twitter data
-library(tidyverse)  # Suite of tools for data analysis using "tidy" framework
-library(tidytext)   # Tools for text analysis
+
+# Load pacman package manager
+
+if (!require(pacman)) install.packages('pacman')
+library(pacman)
+
+p_load(tidyverse,  # Suite of tools for data analysis using "tidy" framework
+       rtweet,     # Access twitter data
+       tidytext,   # Tools for text analysis
+       maps        # Map data
+       )
+
 
 
 create_token(consumer_key = "Your-Token-Here",
@@ -77,11 +104,9 @@ access_secret = "Your-Token-Here")
 
 The main function **rtweet** uses to gather tweet data is `search_tweets`.
 
-By the time the things got rolling, there were over 10,000 replies before he deleted the tweet. Depite calling it a day, he decided to tweet through it. Each of his responses spawned its own mini-ratio in a cascading series of ratios that filled the internet (or at least my dm) with unadulteated glee. [pic]
+For this analysis, I queried the Twitter API for tweets containing Mr. Scarry's twitter handle "\@eScarry" on the date of the incident (I performed this query the night of the 15th, your results if you performed the same query may look different compared to mine).
 
-For this analysis, I querried the Twitter API for tweets conaining Mr. Scarry's twitter handle "\@eScarry" on the date of the incident (I performed this query the night of the 15th, your results if you performed the same query may look different compared to mine).
-
-NOTE: Twitter limits querries to 18,000 tweets per 15 minutes so setting `retryonratelimit = T` would allow you to see the full extent of the damage. I decided to search for more, because why not?
+NOTE: Twitter limits queries to 18,000 tweets per 15 minutes so setting `retryonratelimit = T` allows you to see the full extent of the damage. I decided to search for more, because why not?
 
 ```{r, eval = F, echo = T}
 q <- "@eScarry"
@@ -93,19 +118,19 @@ scarry_menchies <- search_tweets(q, n = 20000,
 ```
 
 
-Plan for 10-15 minutes to download a larger dataset like this ([see here for more info on the Twitter API](https://developer.twitter.com/en/docs.html)). **rtweet** also has to parse the data from JSON to an R `data.frame` or `tibble` which takes some time too.
+Plan for 10-15 minutes to download a larger data set like this ([see here for more info on the Twitter API](https://developer.twitter.com/en/docs.html)). **rtweet** also has to parse the data from JSON to an R `data.frame` or `tibble` which takes some time too.
 
-## Data cleaning
+## The Data
 
-Afterin allowing *rtweet* to work its magic, I ended up with a rather large tibble. The data set contained a ton of information, 88 columns in total. *To think, your hours and hours of shit posting can be summed up such a simple, beautiful table!* Here's a look at the first 10 columns. The first interesting thing to note is that I ended up with close to double the number of tweets I requeseted (my guess is since I set `retryonratelimit = T` the query stopped after hitting the rate limit twice). Just more data for us!
+Twitter's API is rich and includes a wealth of information, 88 columns in total. *To think, your hours and hours of shit posting can be summed up such a beautiful tabular format!* Here's a look at the first 10 columns. The first interesting thing to note is that I ended up with close to double the number of tweets I requested (my guess is since I set `retryonratelimit = T` the query stopped after hitting the rate limit twice). Just more data for us!
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 scarry_menchies %>% 
   select(1:10) %>%
   glimpse()
 ```
 
-A quick look reveals the range of time stamps of tweets my query collected shows the replies I querried were written between 4:06pm CST and 9:17 CST on November 15th. That's 120 tweets per minute, tough look for my guy Eddie.
+A quick look reveals the range of time stamps of tweets my query collected shows the replies I queried were written between 4:06pm CST and 9:17 CST on November 15th. That's 120 tweets per minute, tough look for my guy Eddie.
 
 ```{r}
 min(scarry_menchies$created_at) 
@@ -115,9 +140,9 @@ max(scarry_menchies$created_at)
 
 ### An international phenomenon
 
-Before I did any more intense cleaning, I decided to take a look at the geographic distribution of the mentions. Using `lat_lng` from **rtweet** and simple mapping capabilities of **ggplot2**, we can see *The Bad Tweet* was truly an international phenomenon. Though only a small sample of tweets were geotagged (n = 1087), we can see a multitude of tweets coming from outside of the US including a smattering acrosss Europe, Canada, Australia and at least one brave soul in the United Arab Emirates. 
+Before I did any more intense cleaning, I decided to take a look at the geographic distribution of the mentions. Using `lat_lng` from **rtweet** and simple mapping capabilities of **ggplot2**, we can see *The Bad Tweet* was truly an international phenomenon. Though only a small sample of tweets were geotagged (n = 1087), we can see a multitude of tweets coming from outside of the US including a smattering across Europe, Canada, Australia and at least one brave soul in the United Arab Emirates. 
 
-```{r, cache = T}
+```{r, cache = TRUE, message=FALSE, warning=FALSE}
 world <- ggplot2::map_data("world")
 sm_coords <- lat_lng(scarry_menchies)
 
@@ -126,6 +151,8 @@ ggplot() +
   geom_point(data = sm_coords, aes(x = lng, y = lat), color = "#01FF70", size = 0.5) +
   coord_quickmap() +
   guides(fill = FALSE) +
+  labs(title = "    Geographic Distribution of the mentions of @eScarry's Bad Tweet",
+       caption = "@tony_damiano") +
   theme_void()
 ```
 
@@ -134,17 +161,17 @@ ggplot() +
 
 Now everybody's favorite part. Data cleaning! Despite the tweet being gone, its unique ID survives! We can filter our data set to include just replies to Mr. Scarry's bad tweet if we were so inclined, but as I mentioned earlier, we'll use all of the data from the menchies we gathered. 
 
-```{r}
+```{r, message=FALSE}
 # Not run for this analysis
 scarry_menchies_tweet <- scarry_menchies %>% 
   filter(reply_to_status_id == "1063183409458102272") #the bad tweet
 ```
 
-Tweets contain a lot of information that isn't text -- Spefically twitter user names and urls. I used [regular expressions](http://stat545.com/block022_regular-expression.html) to filter out some of the noise. For those new to regular expressions, it is a humanly incomprehensible and torturous way to parse text for specific patterns within text strings. There are those brave enough to learn its secrets, but I'm content searching Stack Exchange. No reason to reinvent the wheel.
+Tweets contain a lot of information that isn't text -- specifically twitter user names and URLs. I used [regular expressions](http://stat545.com/block022_regular-expression.html) to filter out some of the noise. For those new to regular expressions, they are a humanly incomprehensible and torturous way to parse text for specific patterns within text strings. There are those brave enough to learn its secrets, but I'm content searching Stack Exchange. No reason to reinvent the wheel.
 
-In this next step, I used the [*tidytext*](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html) package to remove all punctuation, make all words lower-case and remove common words like "it", "is", "as", and so forth. The key function I used is is the `unnest_tokens` function. `unnest_tokens` converts each word to lower case and breaks each word into its own line giving us one very very long, 1 x n-words dataset. I removed the HTML and twitter handles, then removed common english words with included "stop_words" list. 
+In this next step, I used the [*tidytext*](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html) package to remove all punctuation, make all words lower-case and remove common words like "it", "is", "as", and so forth. The key function I used is is the `unnest_tokens` function. `unnest_tokens` converts each word to lower case and breaks each word into its own line giving us one very very long, 1 x n-words data set. I removed the HTML and twitter handles, then removed common English words with included "stop_words" list. 
 
-```{r}
+```{r, cache = TRUE, message=FALSE}
 #Remove urls
 text <- scarry_menchies$text %>% 
   gsub("http.*", "", .) 
@@ -165,9 +192,9 @@ cleaned <- text %>%
 
 ### Top 20 Words
 
-As an easy first step, I plotted the most freuently used 20 words in *The Bad Tweet's* mentions. Many of these are to be expected given the content of the orginal tweet (words like "clothes", "jacket" etc.), however the internet came through with "ratio" as the top word in all of Mr. Scarry's mentions and "creepy" also making it into the top 10.
+As a first step, I plotted the most frequently used 20 words in my sample of Eddie's mentions. Many of these are to be expected given the content of the original tweet (words like "clothes", "jacket" etc.), however the internet came through with "ratio" as the top word in all of Mr. Scarry's mentions and "creepy" also making it into the top 10.
 
-```{r, cache = T}
+```{r, cache = T, message=FALSE}
 #Top 20 Words
 top20 <- cleaned %>%
   count(word, sort = TRUE) %>%
@@ -178,8 +205,9 @@ top20 <- cleaned %>%
   coord_flip() +
   labs(y = "Count",
        x = "",
-       title = "Top 20 unique words found in the mentions of 
-       @eScarry's Bad Tweet") +
+       title = "Top 20 unique words found in a sample of
+       @eScarry's Mentions 11/15/18",
+       caption = "@tony_damiano") +
   theme_minimal() +
   theme(axis.text.y = element_text(size = 12))
 
@@ -189,9 +217,9 @@ top20
 
 ### N-Grams
 
-*tidytext* is a flexible package and we can expand our frequency analysis and look at phrases too. Below is the same analysis as above expcet I told  *tidytext* to find all two word phrases. A lot of ratio talk going on.
+*tidytext* is a flexible package and we can expand our frequency analysis and look at phrases too. Below is the same analysis as above except I told  *tidytext* to find all two-word phrases. A lot of ratio talk going on.
 
-```{r}
+```{r, cache = TRUE, message=FALSE}
 ngram2 <- text %>%
   unnest_tokens(paired_words, word, token = "ngrams", n = 2) %>% 
   count(paired_words, sort = T) %>% 
@@ -204,8 +232,9 @@ ngram2 %>%
   coord_flip() +
   labs(y = "Count",
        x = "",
-       title = "Top 20 two word phrases found in the mentions of 
-       @eScarry's Bad Tweet") +
+       title = "Top 20 two-word phrases found in a sample of
+       @eScarry's Mentions 11/15/18",
+       caption = "@tony_damiano") +
   theme_minimal() +
   theme(text = element_text(size=14))
 ```
@@ -213,9 +242,9 @@ ngram2 %>%
 
 ### Just Here for the Ratio
 
-I performed the same analysis with three and four word phrases (not picutred here), but the breakthrough happened once I queried five word phrases. The number one five word phrase in the mentions of Eddie's bad tweet was "just here for the ratio".
+I performed the same analysis with three and four word phrases (not pictured here), but the breakthrough happened once I queried five word phrases. The number one five word phrase in the mentions of Eddie's bad tweet was "just here for the ratio".
 
-```{r}
+```{r, cache = TRUE, message=FALSE}
 ngram5 <- text %>%
   unnest_tokens(n_words, word, token = "ngrams", n = 5) %>% 
   count(n_words, sort = T) %>% 
@@ -228,21 +257,22 @@ ngram5 %>%
   coord_flip() +
   labs(y = "Count",
        x = "",
-       title = "Top 10 five word phrases found in the mentions of 
-       @eScarry's Bad Tweet") +
+       title = "Top 10 five-word phrases found in a sample of
+       @eScarry's Mentions 11/15/18",
+       caption = "@tony_damiano") +
   theme_minimal() +
   theme(text = element_text(size=12))
 ```
 
-![chef-kiss](/post/twitter-dm_files/chefkiss.jpg)
+![](/img/twitter-dm/chef.jpg)
 
 Sometimes being on twitter pays off.
 
 ### Data Science Binch!
 
-Lastly, as a measure of the density of weird left twitter's engagement, I did a querry using common weird left twitter phrases including "binch", "corncob" and "cheif".
+Lastly, as a measure of the density of weird left twitter's engagement, I did a query using common weird left twitter phrases including "binch", "corncob" and "chief".
 
-```{r}
+```{r, cache = TRUE, message=FALSE}
 #Remove urls
 text <- scarry_menchies$text %>% 
   gsub("http.*", "", .) 
@@ -274,11 +304,12 @@ cleaned %>%
   coord_flip() +
   labs(y = "Count",
        x = "",
-       title = "Words in the metions of @eScarry's bad tweet containing
-       'binch', 'corncob' and 'chief'")
+       title = "Words in found in a sample of @eScarry's mentions containing
+       'binch', 'corncob' and 'chief' 11/15/18",
+       caption = "@tony_damiano")
 ```
  
-I found "chief" to be the most popular word in this query (n = 46) followed by "corncob" (n = 26) and "binch" (n = 14). There were some lovely riffs on corncob that are worth mentioning including as a present participle "corncobbing", past participle "corncobbed", vernacular present participle "corncob'n" (something you do with the fella's on a lazy afternoon) and my personal favorite - "corncobbery" which is a noun that I define the behavior of an internet buffoon who refuses to log off.
+I found "chief" to be the most popular word in this query (n = 46) followed by "corncob" (n = 26) and "binch" (n = 14). There were some lovely riffs on corncob that are worth mentioning including as a present participle "corncobbing", past participle "corncobbed", vernacular present participle "corncob'n" (something you do with the fellas on a lazy afternoon) and my personal favorite - "corncobbery" which is a noun that I define the behavior of an internet buffoon who refuses to log off.
 
 
 ## Conclusion
@@ -288,3 +319,5 @@ My conclusions from this analysis are threefold:
   1. Eddie Scarry made a really bad tweet
   2. Twitter responded in magnificent fashion
   3. I can leverage my onlineness for good, not just shitposting
+  
+Raw source code and data from this analysis are available on my [github](https://github.com/tdamiano/site/tree/master/content/post).
