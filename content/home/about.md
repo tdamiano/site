@@ -11,9 +11,10 @@ weight = 5
 [interests]
   interests = [
     "Housing & Community Development Policy",
+    "Community-based Research",
     "Gentrification/Neighborhood Change",
-    "GIS",
-    "R"
+    "R",
+    "Open Data / Data Democracy"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -33,6 +34,8 @@ weight = 5
   year = 2010
 
 +++
+
+**Please excuse the mess as I work on my new website**
 
 # Biography
 
