@@ -142,7 +142,6 @@ ggplot() +
 <pre class="r"><code># Not run for this analysis
 scarry_menchies_tweet &lt;- scarry_menchies %&gt;% 
   filter(reply_to_status_id == &quot;1063183409458102272&quot;) #the bad tweet</code></pre>
-<pre><code>## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4</code></pre>
 <p>Tweets contain a lot of information that isn’t text – specifically twitter user names and URLs. I used <a href="http://stat545.com/block022_regular-expression.html">regular expressions</a> to filter out some of the noise. For those new to regular expressions, they are a humanly incomprehensible and torturous way to parse text for specific patterns within text strings. There are those brave enough to learn its secrets, but I’m content searching Stack Exchange. No reason to reinvent the wheel.</p>
 <p>In this next step, I used the <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html"><em>tidytext</em></a> package to remove all punctuation, make all words lower-case and remove common words like “it”, “is”, “as”, and so forth. The key function I used is is the <code>unnest_tokens</code> function. <code>unnest_tokens</code> converts each word to lower case and breaks each word into its own line giving us one very very long, 1 x n-words data set. I removed the HTML and twitter handles, then removed common English words with included “stop_words” list.</p>
 <pre class="r"><code>#Remove urls
@@ -277,4 +276,5 @@ cleaned %&gt;%
 <li>Twitter responded in magnificent fashion</li>
 <li>I can leverage my onlineness for good, not just shitposting</li>
 </ol>
+<p>Raw source code and data from this analysis are available on my <a href="https://github.com/tdamiano/site/tree/master/content/post">github</a>.</p>
 </div>
