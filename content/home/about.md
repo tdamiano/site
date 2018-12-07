@@ -38,9 +38,10 @@ weight = 5
 **Please excuse the mess as I work on my new website**
 
 # Biography
+Hello!
 
-Tony is PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. He received a master's degree in Urban and Regional Planning at the Humphrey School and his undergraduate degree in Political Science at Marquette University in Milwaukee, WI.
+I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI.
 
-He works as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting his PhD degree, he worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and nonprofits.
+I work as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and nonprofits.
 
-His research interests include housing policy, urban political economy, race and inequality. He also has a passion for R, open data, and maps. 
+My research interests include housing policy, urban political economy, race and inequality. I also love R, open data, and GIS.
