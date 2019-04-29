@@ -35,12 +35,10 @@ weight = 5
 
 +++
 
-**Please excuse the mess as I work on my new website**
-
 # Biography
-Hello!
+Hello, welcome to my new website built using R, Hugo, Rmarkdown and Blogdown!
 
-I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI.
+I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I grew up in Iowa City, IA. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI.
 
 I work as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and nonprofits.
 
