@@ -1,19 +1,19 @@
 +++
 # Project title.
-title = "Effects of New Construction on Existing Rents in Minneapolis, MN"
+title = "The Diversity of Gentrification: Multiple Forms of Gentrification in Minneapolis and St. Paul"
 
 # Date this page was created.
-date = 2019-04-30T00:00:00
+date = 2019-04-09T00:00:00
 
 # Project summary to display on homepage.
-summary = "Exploring the effects of new market-rate construction on existing rents in Minneapolis, MN"
+summary = "A mixed-methods study on the varying facets of gentrification in the TWin Cities"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["housing supply", "housing sub-markets"]
+tags = ["Gentrificaiton"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link = "http://gentrification.umn.edu/"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -24,9 +24,8 @@ external_link = ""
 slides = ""
 
 # Links (optional).
-url_pdf = ""
-url_slides = "slides/uaa_pres.html/"
-
+url_pdf = "https://gentrification.dl.umn.edu/sites/g/files/pua4816/f/media/diversity-of-gentrification-012519.pdf"
+url_slides = ""
 url_video = ""
 url_code = ""
 
@@ -38,10 +37,9 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
 # To use, add an image named `featured.jpg/png` to your project's folder. 
 [image]
   # Caption (optional)
-  caption = "[Photo by Josh Hild on Unsplash](https://unsplash.com/photos/mO1LXRLeLFs)"
+  caption = "RCAA in the Minneapolis-St. Paul Metro Area"
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
 +++
-Test
