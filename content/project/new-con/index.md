@@ -44,4 +44,6 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   focal_point = "Smart"
 +++
 
-Test
+Presentation slides are from the 2019 Urban Affairs Association Conference. Working paper is expected this summer. All results are preliminary.
+
+This project is focused on analysing the effects of new construction on existing rents. I utilize a panel dataset from the real estate analytics firm [CoStar](https://www.costar.com/) in conjuction with the [Minnesota Housing Partnership (MHP)](https://www.mhponline.org/).

@@ -36,10 +36,10 @@ weight = 5
 +++
 
 # Biography
-Hello, welcome to my new website built using R, Hugo, Rmarkdown and Blogdown!
+Hello!
 
-I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I grew up in Iowa City, IA. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI.
+My name is Tony Damiano and I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
 
 I work as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and nonprofits.
 
-My research interests include housing policy, urban political economy, race and inequality. I also love R, open data, and GIS.
+My research interests include housing policy, community-based research, race and inequality. I do mostly quantitative analysis using R, Stata and ArcGIS. I believe the best and most useful research for social changes comes through the co-production of knowlege by and with marginalized communities. 

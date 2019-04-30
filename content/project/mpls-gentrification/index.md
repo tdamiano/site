@@ -6,7 +6,7 @@ title = "The Diversity of Gentrification: Multiple Forms of Gentrification in Mi
 date = 2019-04-09T00:00:00
 
 # Project summary to display on homepage.
-summary = "A mixed-methods study on the varying facets of gentrification in the TWin Cities"
+summary = "A mixed-methods study on the varying facets of gentrification in the Twin Cities"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`

@@ -13,7 +13,7 @@ summary = "Racially Concentrated Areas of Affluence (RCAA). Studying white afflu
 tags = ["RCAA", "reproducible research"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://tonydamiano.shinyapps.io/rcaa/"
+external_link = ""
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -43,6 +43,10 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
 +++
+
+# Web application
+
+Find a link to a companion web application [here](https://tonydamiano.shinyapps.io/rcaa/)
 
 # Reproducible Version
 
