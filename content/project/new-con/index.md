@@ -25,8 +25,7 @@ slides = ""
 
 # Links (optional).
 url_pdf = ""
-url_slides = "slides/uaa_pres.html/"
-
+url_slides = "uaa-2019.pdf"
 url_video = ""
 url_code = ""
 
@@ -44,4 +43,5 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
 +++
+
 Test
