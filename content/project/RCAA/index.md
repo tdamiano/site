@@ -27,7 +27,7 @@ slides = ""
 url_pdf = "https://www.huduser.gov/portal/periodicals/cityscpe/vol21num1/ch4.pdf"
 url_slides = ""
 url_video = ""
-url_code = ""
+url_code = "https://github.com/tdamiano/gwd2019-rcaa"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
@@ -50,7 +50,7 @@ Find a link to a companion web application [here](https://tonydamiano.shinyapps.
 
 # Reproducible Version
 
-Code for the analyses used in this paper as well as for this website are available here. We are working hard to make as much of the empirical work accessible, reproducible, and open. It will be posted shortly. 
+We are working hard to make as much of the empirical work accessible, reproducible, and open. Replication code can be found [here](https://github.com/tdamiano/gwd2019-rcaa)
 
 ### Citation
 
