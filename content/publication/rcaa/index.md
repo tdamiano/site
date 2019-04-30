@@ -20,10 +20,10 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Cityscape: A Journal of Policy Development and Research, 21*(1)"
-publication_short = ""
+publication_short = "*Cityscape*"
 
 # Abstract.
-abstract = "'Racially/Ethnically Concentrated Areas of Poverty' (RECAPs) have become an official focus of policy attention for the U.S. Department of Housing and Urban Development (HUD) through the 2015 rule regarding local governments’ obligations to Affirmatively Further Fair Housing. In this article, we argue for equal attention to the other end of the segregation continuum, affluent White neighborhoods, or what we call “Racially Concentrated Areas of Affluence” (RCAAs). We examine the prevalence and characteristics of RCAAs in the 50 largest metropolitan areas of the United States. Our findings show that RCAAs, as we define them, are not as prevalent as RECAPs, accounting for an average of 2.19 percent of all tracts in the 50 largest metro areas compared with RECAPs, which are an average of 4.68 percent of metro tracts. RCAAs are more common in several metropolitan areas than RECAPs. The two phenomena seem to be related; controlling for group size, the correlation between metro area shares of RCAAs and RECAPs is moderately positive. We conclude by offering reasons for focusing policy attention on RCAAs that include acknowledging the various public policies that have created these enclaves of advantage and the ways in which current and past public policies have subsidized them."
+abstract = "Racially/Ethnically Concentrated Areas of Poverty (RECAPs) have become an official focus of policy attention for the U.S. Department of Housing and Urban Development (HUD) through the 2015 rule regarding local governments’ obligations to Affirmatively Further Fair Housing. In this article, we argue for equal attention to the other end of the segregation continuum, affluent White neighborhoods, or what we call “Racially Concentrated Areas of Affluence” (RCAAs). We examine the prevalence and characteristics of RCAAs in the 50 largest metropolitan areas of the United States. Our findings show that RCAAs, as we define them, are not as prevalent as RECAPs, accounting for an average of 2.19 percent of all tracts in the 50 largest metro areas compared with RECAPs, which are an average of 4.68 percent of metro tracts. RCAAs are more common in several metropolitan areas than RECAPs. The two phenomena seem to be related; controlling for group size, the correlation between metro area shares of RCAAs and RECAPs is moderately positive. We conclude by offering reasons for focusing policy attention on RCAAs that include acknowledging the various public policies that have created these enclaves of advantage and the ways in which current and past public policies have subsidized them."
 
 # Summary. An optional shortened abstract.
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
@@ -79,4 +79,6 @@ url_source = ""
   focal_point = ""
 +++
 
-Test
+{{% alert note %}}
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+{{% /alert %}}
