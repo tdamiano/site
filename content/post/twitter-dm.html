@@ -152,9 +152,10 @@ text &lt;- scarry_menchies$text %&gt;%
 text &lt;- text %&gt;%
   gsub(&quot;(^|[^@\\w])@(\\w{1,15})\\b&quot;, &quot;&quot;, .) %&gt;%
   as_tibble() %&gt;%
-  unnest_tokens(word, value)
-
-# Remove stop words (commaon english words)
+  unnest_tokens(word, value)</code></pre>
+<pre><code>## Warning: Calling `as_tibble()` on a vector is discouraged, because the behavior is likely to change in the future. Use `tibble::enframe(name = NULL)` instead.
+## This warning is displayed once per session.</code></pre>
+<pre class="r"><code># Remove stop words (commaon english words)
 data(&quot;stop_words&quot;)
 
 cleaned &lt;- text %&gt;%
