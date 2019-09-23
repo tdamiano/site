@@ -2,7 +2,7 @@
 # About/Biography widget.
 widget = "about"
 active = true
-date = 2016-04-20T00:00:00
+date = 2019-09-23T00:00:00
 
 # Order that this section will appear in.
 weight = 5
@@ -38,7 +38,7 @@ weight = 5
 # Biography
 Hello!
 
-My name is Tony Damiano and I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
+My name is Anthony Damiano and I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
 
 I work as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and nonprofits.
 
