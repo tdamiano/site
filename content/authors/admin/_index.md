@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Anthony Phillip Damiano
+name: Anthony Damiano
 
 # Username (this should match the folder name)
 authors:
