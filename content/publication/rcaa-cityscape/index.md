@@ -1,5 +1,5 @@
 ---
-title: "An example journal article"
+title: "Racially Concentrated Areas of Affluence: A Preliminary Investigation"
 authors:
 - Edward Goetz
 - Anthony Damiano
