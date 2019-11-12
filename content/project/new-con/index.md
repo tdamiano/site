@@ -17,10 +17,10 @@ links:
 - icon: twitter
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://twitter.com/tony_damiano
 url_code: ""
 url_pdf: ""
-url_slides: ""
+url_slides: "uaa-2019.pdf"
 url_video: ""
 
 # Slides (optional).
@@ -28,7 +28,7 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ""
 ---
 
 This project is focused on analysing the effects of new construction on existing rents. I utilize a panel dataset from the real estate analytics firm [CoStar](https://www.costar.com/) in conjuction with the [Minnesota Housing Partnership (MHP)](https://www.mhponline.org/) and my co-author Christopher Frenier at the University Minnesota.
