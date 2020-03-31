@@ -19,7 +19,7 @@ links:
   name: Follow
   url: https://twitter.com/tony_damiano
 url_code: ""
-url_pdf: "Damiano-Frenier-WP-033020.pdf"
+url_pdf: "https://www.tonydamiano.com/project/new-con/Damiano-Frenier-WP-033020.pdf"
 url_slides: "supply-ppt.pdf"
 url_video: ""
 
