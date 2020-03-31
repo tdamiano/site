@@ -19,7 +19,7 @@ links:
   name: Follow
   url: https://twitter.com/tony_damiano
 url_code: ""
-url_pdf: "https://www.tonydamiano.com/project/new-con/Damiano-Frenier-WP-033020.pdf"
+url_pdf: "https://www.tonydamiano.com/project/new-con/bbb-wp.pdf"
 url_slides: "supply-ppt.pdf"
 url_video: ""
 
@@ -31,7 +31,7 @@ url_video: ""
 slides: ""
 ---
 
-Co-authored with [Christopher Frenier](https://sites.google.com/a/umn.edu/christopherfrenier/) at the University Minnesota, this project explores the effects of new, market-rate construction on existing rents. A draft working paper available is available [here](https://www.tonydamiano.com/project/new-con/Damiano-Frenier-WP-033020.pdf).
+Co-authored with [Christopher Frenier](https://sites.google.com/a/umn.edu/christopherfrenier/) at the University Minnesota, this project explores the effects of new, market-rate construction on existing rents. A draft working paper available is available [here](https://www.tonydamiano.com/project/new-con/bbb-wp.pdf).
 
 A previous version of this paper was presented at the Urban Affairs Association Conference (UAA) in 2019. [Click here for a recent slide deck](https://www.tonydamiano.com/project/new-con/supply-ppt.pdf).
 
