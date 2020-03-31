@@ -1,10 +1,10 @@
 ---
-title: Housing Submarkets and Effects of New Construction on Existing Rents
+title: "Build Baby Build?: Housing Submarkets and Effects of New Construction on Existing Rents"
 summary: Exploring the effects of new market-rate construction on existing rents in Minneapolis, MN.
 tags:
 - housing supply
 - housing markets
-date: "2020-02-12T00:00:00Z"
+date: "2020-03-30T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -19,7 +19,7 @@ links:
   name: Follow
   url: https://twitter.com/tony_damiano
 url_code: ""
-url_pdf: ""
+url_pdf: "Damiano-Frenier-WP-033020.pdf"
 url_slides: "supply-ppt.pdf"
 url_video: ""
 
@@ -31,9 +31,9 @@ url_video: ""
 slides: ""
 ---
 
-Co-authored with [Christopher Frenier](https://sites.google.com/a/umn.edu/christopherfrenier/) at the University Minnesota, this project explores the effects of new, market-rate construction on existing rents. A previous version of this paper was presented at the Urban Affairs Association Conference (UAA) in 2019. [Click here for a recent slide deck](https://www.tonydamiano.com/project/new-con/supply-ppt.pdf).
+Co-authored with [Christopher Frenier](https://sites.google.com/a/umn.edu/christopherfrenier/) at the University Minnesota, this project explores the effects of new, market-rate construction on existing rents. A draft working paper available is available [here](https://www.tonydamiano.com/project/new-con/Damiano-Frenier-WP-033020.pdf).
 
-We are finishing up a public working paper, which will be released by the end of February 2020. 
+A previous version of this paper was presented at the Urban Affairs Association Conference (UAA) in 2019. [Click here for a recent slide deck](https://www.tonydamiano.com/project/new-con/supply-ppt.pdf).
 
 This project is made possible by support from the [Center for Urban and Regional Affairs (CURA)](http://www.cura.umn.edu/) and [the Minnesota Housing Partnership (MHP)](https://www.mhponline.org/) 
 
