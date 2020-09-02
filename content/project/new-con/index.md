@@ -1,10 +1,10 @@
 ---
-title: Effects of New Construction on Existing Rents
+title: "Build Baby Build?: Housing Submarkets and Effects of New Construction on Existing Rents"
 summary: Exploring the effects of new market-rate construction on existing rents in Minneapolis, MN.
 tags:
 - housing supply
 - housing markets
-date: "2016-04-27T00:00:00Z"
+date: "2020-03-30T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -17,10 +17,10 @@ links:
 - icon: twitter
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://twitter.com/tony_damiano
 url_code: ""
-url_pdf: ""
-url_slides: ""
+url_pdf: "https://www.tonydamiano.com/project/new-con/bbb-wp.pdf"
+url_slides: "supply-ppt.pdf"
 url_video: ""
 
 # Slides (optional).
@@ -28,12 +28,12 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ""
 ---
 
-This project is focused on analysing the effects of new construction on existing rents. I utilize a panel dataset from the real estate analytics firm [CoStar](https://www.costar.com/) in conjuction with the [Minnesota Housing Partnership (MHP)](https://www.mhponline.org/) and my co-author Christopher Frenier at the University Minnesota.
+Co-authored with [Christopher Frenier](https://sites.google.com/a/umn.edu/christopherfrenier/) at the University Minnesota, this project explores the effects of new, market-rate construction on existing rents. A draft working paper available is available [here](https://www.tonydamiano.com/project/new-con/bbb-wp.pdf).
 
+A previous version of this paper was presented at the Urban Affairs Association Conference (UAA) in 2019. [Click here for a recent slide deck](https://www.tonydamiano.com/project/new-con/supply-ppt.pdf).
 
-Presentation slides are from the 2019 Urban Affairs Association Conference. Working paper is expected soon. All results are preliminary.
-
+This project is made possible by support from the [Center for Urban and Regional Affairs (CURA)](http://www.cura.umn.edu/) and [the Minnesota Housing Partnership (MHP)](https://www.mhponline.org/) 
 
