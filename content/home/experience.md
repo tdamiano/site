@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "Graduate Research Assistant"
   company = "Center for Urban & Regional Affairs (CURA) | University of Minnesota"
-  company_url = "cura.umn.edu"
+  company_url = "https://cura.umn.edu/"
   location = "Minneapolis, MN"
   date_start = "2015-09-01"
   # date_end = ""
@@ -33,14 +33,14 @@ Activities include:
 * Data analysis and visualization
 * Statistical modeling
 * Public presentations
-* Co-authored *Gentrification in Minneapolis* report
+* Co-authored *The Diversity of Gentrification: Multiple Forms of Gentrification in Minneapolis and St. Paul*
 
   """
 
 [[experience]]
   title = "Research Associate"
   company = "University of Minnesota"
-  company_url = "cura.umn.edu"
+  company_url = "https://cura.umn.edu/"
   location = "Minneapolis, MN"
   date_start = "2014-09-01"
   date_end = "2015-09-01"
@@ -53,7 +53,7 @@ Activities included:
 * Academic research assistance
 * GIS and community data visualization
 * Began Racially Concentrated Areas of Affluence (RCAA) research
-* Created a model to fund affordable housing using regional high value residential property
+* Created a model to fund affordable housing using regional high-value residential property
 
   """
 +++
