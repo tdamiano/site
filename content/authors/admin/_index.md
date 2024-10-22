@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD Candidate, Graduate Research Assistant
+role: Research Associate
 
 # Organizations/Affiliations
 organizations:
@@ -20,7 +20,7 @@ organizations:
   url: "http://www.cura.umn.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am finishing my PhD in urban planning at the University of Minnesota. I study housing policy and community development.
+bio: I am a research associate at the Center for Urban and Regional Affairs (CURA) at the University of Minnesota. I study housing policy and community development.
 
 interests:
 - Housing & Community Development Policy
@@ -74,8 +74,8 @@ user_groups:
 
 Hello!
 
-My name is Anthony Damiano and I am a PhD candidate at the Humphrey School of Public Affairs at the University of Minnesota. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
+My name is Anthony Damiano, I am a research associate at the Center for Urban and Regional Affairs (CURA) at the University of Minnesota. I received my PhD from the Humphrey School in 2021. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
 
-I work as a research assistant at the Center for Urban and Regional Affairs (CURA). Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and non-profits.
+Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and non-profits.
 
 My research interests include housing policy, community-based research, race and inequality. I do mostly quantitative analysis using R, Stata and ArcGIS. I believe the best and most useful research comes through the co-production of knowlege by and with marginalized communities.
