@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Research Associate
+role: Senior Research Associate
 
 # Organizations/Affiliations
 organizations:
@@ -20,7 +20,7 @@ organizations:
   url: "http://www.cura.umn.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a research associate at the Center for Urban and Regional Affairs (CURA) at the University of Minnesota. I study housing policy and community development.
+bio: I am a senior research associate at the Center for Urban and Regional Affairs (CURA) at the University of Minnesota. I study housing policy and community development.
 
 interests:
 - Housing & Community Development Policy
@@ -47,9 +47,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link:  mailto:damia025@umn.edu  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
+- icon: bluesky
   icon_pack: fab
-  link: https://twitter.com/tony_damiano
+  link: https://bsky.app/profile/tonydamiano.bsky.social
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=tcukrEAAAAAJ&hl=en
