@@ -31,7 +31,7 @@ education:
   courses:
   - course: PhD in Public Affairs
     institution: University of Minnesota
-    year: 2020 (Expected)
+    year: 2021
   - course: Master of Urban & Regional Planning
     institution: University of Minnesota
     year: 2014
@@ -74,7 +74,7 @@ user_groups:
 
 Hello!
 
-My name is Anthony Damiano, I am a research associate at the Center for Urban and Regional Affairs (CURA) at the University of Minnesota. I received my PhD from the Humphrey School in 2021. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
+My name is Anthony Damiano, I am a senior research associate at the Center for Urban and Regional Affairs (CURA) at the University of Minnesota. I received my PhD from the Humphrey School in 2021. I received a master's degree in Urban and Regional Planning at the Humphrey School and my undergraduate degree in Political Science at Marquette University in Milwaukee, WI. I grew up in Iowa City, IA.
 
 Before starting my PhD degree, I worked the Community GIS Program at CURA providing GIS technical assistance to local neighborhood organizations and non-profits.
 
